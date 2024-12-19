@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="bkh-OS-ert" customClass="tableCell" customModule="Koko_Friends" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bkh-OS-ert" id="RZz-yL-ezd">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeP-Ao-dMN">
+                        <rect key="frame" x="10" y="15" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="4Fr-lv-Ayc"/>
+                            <constraint firstAttribute="height" constant="14" id="GkG-lG-ohi"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="icFriendsStar"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgFriendsList" translatesAutoresizingMaskIntoConstraints="NO" id="QVe-Vs-6bF">
+                        <rect key="frame" x="30" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="LIp-k7-5nq"/>
+                            <constraint firstAttribute="width" constant="40" id="WWU-3T-lhd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="梁立璇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isU-Zx-e95">
+                        <rect key="frame" x="85" y="0.0" width="179" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ij-85-d6r">
+                        <rect key="frame" x="264" y="10" width="47" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="X9q-e8-4KT"/>
+                            <constraint firstAttribute="width" constant="47" id="YS4-ML-RsV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="轉帳">
+                            <color key="titleColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0g-hm-WeF">
+                        <rect key="frame" x="326" y="10" width="47" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="PZI-fc-fQS"/>
+                            <constraint firstAttribute="width" constant="47" id="xiM-wR-4VI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="isU-Zx-e95" firstAttribute="centerY" secondItem="RZz-yL-ezd" secondAttribute="centerY" id="2Og-R5-Nid"/>
+                    <constraint firstItem="QVe-Vs-6bF" firstAttribute="centerY" secondItem="RZz-yL-ezd" secondAttribute="centerY" id="8tf-x8-a7i"/>
+                    <constraint firstItem="k0g-hm-WeF" firstAttribute="centerY" secondItem="RZz-yL-ezd" secondAttribute="centerY" id="9qt-hz-Zxv"/>
+                    <constraint firstAttribute="trailing" secondItem="k0g-hm-WeF" secondAttribute="trailing" constant="20" id="BAe-kp-BTr"/>
+                    <constraint firstAttribute="bottom" secondItem="isU-Zx-e95" secondAttribute="bottom" id="JoQ-UE-ITM"/>
+                    <constraint firstItem="isU-Zx-e95" firstAttribute="top" secondItem="RZz-yL-ezd" secondAttribute="top" id="Mib-tX-m3O"/>
+                    <constraint firstItem="isU-Zx-e95" firstAttribute="leading" secondItem="QVe-Vs-6bF" secondAttribute="trailing" constant="15" id="Puu-DR-q6t"/>
+                    <constraint firstItem="OeP-Ao-dMN" firstAttribute="centerY" secondItem="RZz-yL-ezd" secondAttribute="centerY" id="QtM-4j-fGk"/>
+                    <constraint firstItem="OeP-Ao-dMN" firstAttribute="leading" secondItem="RZz-yL-ezd" secondAttribute="leading" constant="10" id="TFg-4E-S1X"/>
+                    <constraint firstItem="QVe-Vs-6bF" firstAttribute="leading" secondItem="OeP-Ao-dMN" secondAttribute="trailing" constant="6" id="eei-gi-O5F"/>
+                    <constraint firstItem="2Ij-85-d6r" firstAttribute="centerY" secondItem="RZz-yL-ezd" secondAttribute="centerY" id="kMF-aL-j2d"/>
+                    <constraint firstItem="2Ij-85-d6r" firstAttribute="leading" secondItem="isU-Zx-e95" secondAttribute="trailing" id="nLR-B0-FRr"/>
+                    <constraint firstAttribute="trailing" secondItem="2Ij-85-d6r" secondAttribute="trailing" constant="82" id="zvP-S1-p2E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="tableCell"/>
+            <connections>
+                <outlet property="TransferBtn" destination="2Ij-85-d6r" id="HDA-Fb-kcP"/>
+                <outlet property="name1" destination="isU-Zx-e95" id="BtQ-I8-0Ie"/>
+                <outlet property="star" destination="OeP-Ao-dMN" id="Iii-0k-rnz"/>
+                <outlet property="status" destination="k0g-hm-WeF" id="BFL-EV-Cvg"/>
+            </connections>
+            <point key="canvasLocation" x="93.89312977099236" y="106.33802816901409"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icFriendsStar" width="14" height="14"/>
+        <image name="imgFriendsList" width="40" height="40"/>
+    </resources>
+</document>
