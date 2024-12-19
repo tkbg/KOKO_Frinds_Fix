@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Koko_Friends' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Koko_Friends
+  def shared_pods
+      
+      pod 'Alamofire', '~> 4.9.1'
+      pod 'Alamofire-Synchronous', '4.0'
+      pod 'CryptoSwift', '~> 1.4.1'
+      pod 'SVProgressHUD', '2.2.5'
+  end
+
+
+  target 'Koko_FriendsTests' do
+    inherit! :search_paths
+    shared_pods
+    # Pods for testing
+  end
+
+  target 'Koko_FriendsUITests' do
+    # Pods for testing
+    shared_pods
+  end
+
+end

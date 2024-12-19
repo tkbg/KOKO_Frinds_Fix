@@ -1,0 +1,6 @@
+framework module Pods_Koko_Friends_Koko_FriendsUITests {
+  umbrella header "Pods-Koko_Friends-Koko_FriendsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
